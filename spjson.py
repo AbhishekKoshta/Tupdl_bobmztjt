@@ -1,3 +1,4 @@
+# Through git bash
 import sqlite3
 
 conn = sqlite3.connect('spider.sqlite')
