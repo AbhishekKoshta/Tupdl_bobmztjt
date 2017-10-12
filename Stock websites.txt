@@ -1,0 +1,21 @@
+1.	www.traderscockpit.com/			Working
+2.	techpaisa.com/				Working	
+3.	www.bseindia.com/			Working
+4.	www.topstockresearch.com/		Working
+
+5.	https://in.investing.com/		Not Working
+6.	https://www.nseindia.com/		Not Working
+7.	https://in.finance.yahoo.com/		Working
+8.	https://finance.google.com/finance	Working
+
+9.	economictimes.indiatimes.com/markets	Not Working
+
+10.	https://www.valueresearchonline.com/Default.asp?	Not Working
+
+11.	www.stockedge.com/			Working
+
+12.	https://www.equitymaster.com/		Working
+13.	https://www.fyers.in/brainstorm/	Not Working
+14.	https://www.moneycontrol.com/		Working
+
+
