@@ -1,4 +1,0 @@
-spiderJson = {"nodes":[
-],
-"links":[
-]};
