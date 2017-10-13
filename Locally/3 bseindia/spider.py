@@ -5,7 +5,7 @@ from urllib.parse import urljoin
 from urllib.parse import urlparse
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
-
+import time
 # Ignore SSL certificate errors
 ctx = ssl.create_default_context()
 ctx.check_hostname = False
@@ -51,13 +51,15 @@ for row in cur:
 print(webs)
 
 many = 0
+comp_added = 0
 while True:
     if ( many < 1 ) :
         sval = input('How many pages:')
         if ( len(sval) < 1 ) : break
         many = int(sval)
+     
     many = many - 1
-
+    comp_added = comp_added + 1
     cur.execute('SELECT id,url FROM Pages WHERE html is NULL and error is NULL ORDER BY RANDOM() LIMIT 1')
     try:
         row = cur.fetchone()
@@ -143,8 +145,9 @@ while True:
             continue
         # print fromid, toid
         cur.execute('INSERT OR IGNORE INTO Links (from_id, to_id) VALUES ( ?, ? )', ( fromid, toid ) )
-
-
+    if comp_added %20 == 0:   
+        print ("/n Pausing a bit...")
+        time.sleep(5)
     print(count)
 
 cur.close()
